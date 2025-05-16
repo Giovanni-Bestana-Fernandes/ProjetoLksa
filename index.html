@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/Abstracoes/header.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="carousel.css">
+    <link rel="stylesheet" href="chat.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter&display=swap"
         rel="stylesheet">
 </head>
@@ -48,14 +49,16 @@
 
     <section class="hero" id="hero">
         <div class="container">
-            <div class="logo">
-                <img src="https://i.imgur.com/C6X3vqp.png" alt="Logo" />
-                <div class="logo-text">EXCLUSIVE</div>
-            </div>
-            <div class="subtitle">REFERÊNCIA NACIONAL HÁ 4 ANOS</div>
+            <!--  <div class="subtitle">Transformando Espaços em Experiências Memoráveis</div> -->
             <h1 class="title">
-                Conquiste com Cheiros:<br>Desperte Emoções com
-                <span>Marketing Olfativo Premium!</span>
+                <div class="logo">
+                    <img src="/Assets/background.jpg" alt="Logo" />
+                    <!-- <div class="logo-text">LAKSA AROMAS</div> -->
+                </div>
+                Conquiste com Cheiros:<br> Desperte Emoções com a experiência da Laksa!
+                <div class="div-typing">
+                    <span class="typing">Marketing Olfativo Premium!</span>
+                </div>
             </h1>
             <p class="description">
                 Desperte emoções, crie memórias e diferencie sua marca de maneira única com o Marketing Olfativo da
@@ -63,71 +66,77 @@
                 contam a história da sua marca. Seja lembrado não apenas pelo que seus clientes veem, mas pelo que
                 sentem!
             </p>
-            <button class="cta-button">QUERO TORNAR A MINHA MARCA INESQUECÍVEL</button>
-            <div class="video-icon"></div>
+            <button class="cta-button">Entrar na Loja</button>
         </div>
     </section>
     <section class="carousel-section">
         <div class="carousel-background"></div>
-        <div class="carousel-content">
-            <div class="testimonial active">
-                <p>"Simplesmente apaixonada pelos produtos! A qualidade dos aromas é incomparável,
-                    e minha casa nunca esteve tão cheirosa. A dona é super atenciosa,
-                    sempre sabe exatamente o que indicar. Atendimento impecável!"</p>
-                <div class="author">
-                    <img src="/Assets/usuario.png" alt="Foto">
-                    <div>
-                        <strong>Nome</strong><br>
-                        Cargo
-                        Local
-                    </div>
-                </div>
-            </div>
-
-            <div class="testimonial">
-                <p>"Sempre compro lá quando passo por Barra Bonita.
-                    Produtos excelentes, duradouros e com fragrâncias únicas.
-                    A proprietária faz questão de conhecer cada cliente e oferecer o melhor atendimento possível.
-                    Virei cliente fiel!"</p>
-                <div class="author">
-                    <img src="/Assets/usuario.png" alt="Foto">
-                    <div>
-                        <strong>Nome</strong><br>
-                        Cargo Local
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial">
-                <p>"A loja tem um astral maravilhoso!
-                    Tudo muito bem organizado e com aquele cheirinho que a gente sente de longe.
-                    Adoro passar lá pra ver as novidades e bater papo com a dona, que sempre atende com carinho e
-                    atenção."</p>
-                <div class="author">
-                    <img src="/Assets/usuario.png" alt="Foto">
-                    <div>
-                        <strong>Camila Duarte – Barra Bonita/SP</strong><br>
-                        Cargo Local
-                    </div>
-                </div>
-            </div>
-
-            <!-- Botões -->
+        <div class="carousel-wrapper"> <!-- Novo contêiner -->
+    
             <button class="prev">&#10094;</button>
-            <button class="next">&#10095;</button>
-            <div class="dots">
-                <span class="dot active"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <!-- ... -->
+    
+            <div class="carousel-content">
+                <div class="testimonial active">
+                    <p>"Simplesmente apaixonada pelos produtos! A qualidade dos aromas é incomparável,
+                        e minha casa nunca esteve tão cheirosa. A dona é super atenciosa,
+                        sempre sabe exatamente o que indicar. Atendimento impecável!"</p>
+                    <div class="author">
+                        <img src="/Assets/usuario.png" alt="Foto">
+                        <div>
+                            <strong>Nome</strong><br>
+                            Cargo<br>
+                            Local
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="testimonial">
+                    <p>"Sempre compro lá quando passo por Barra Bonita.
+                        Produtos excelentes, duradouros e com fragrâncias únicas.
+                        A proprietária faz questão de conhecer cada cliente e oferecer o melhor atendimento possível.
+                        Virei cliente fiel!"</p>
+                    <div class="author">
+                        <img src="/Assets/usuario.png" alt="Foto">
+                        <div>
+                            <strong>Nome</strong><br>
+                            Cargo<br>
+                            Local
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                </div>
             </div>
+    
+            <button class="next">&#10095;</button>
+    
         </div>
     </section>
-
-
-    <a href="https://wa.me/SEUNUMEROAQUI" class="whatsapp" target="_blank" aria-label="Converse no WhatsApp">
+    
+    <a class="whatsapp" onclick="toggleChat()" aria-label="Converse no WhatsApp">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
     </a>
+
+    <div class="chatbox" id="chatbox">
+        <div class="chat-header">
+            <span>Atendimento</span>
+            <button class="close-chat" onclick="toggleChat()">✖</button>
+        </div>
+        <div class="chat-body" id="chat-body">
+            <div class="message admin">Olá! Como posso ajudar?</div>
+        </div>
+        <div class="chat-footer">
+            <div class="options" id="options">
+                <button onclick="selectOption(this, 'Quero fazer um pedido')">Quero fazer um pedido</button>
+                <button onclick="selectOption(this, 'Tenho uma dúvida')">Tenho uma dúvida</button>
+                <button onclick="selectOption(this, 'Falar com um atendente')">Falar com um atendente</button>
+            </div>
+            <button onclick="sendMessage()" style="margin-top: 30px;">Enviar</button>
+        </div>
+    </div>
 
     <script src="/Abstracoes/header.js"></script>
     <script src="script.js"></script>

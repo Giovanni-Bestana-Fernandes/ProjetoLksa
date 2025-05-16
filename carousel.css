@@ -65,9 +65,6 @@
     z-index: 2;
 }
 
-.prev { left: 20px; }
-.next { right: 20px; }
-
 .dots {
     margin-top: 20px;
 }
@@ -85,4 +82,34 @@
 
 .dot.active {
     opacity: 1;
+}
+
+.carousel-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 40px; /* Espaço interno para setas */
+}
+
+.carousel-content {
+    flex: 1;
+    text-align: center;
+    animation: fade 1s ease-in-out;
+}
+
+.prev,
+.next {
+    position: relative; /* Removemos 'absolute' para que fique dentro do fluxo do flex */
+    top: auto;
+    transform: none;
+    font-size: 2.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 2;
 }
