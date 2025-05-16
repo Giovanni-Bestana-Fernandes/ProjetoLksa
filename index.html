@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Abstracoes/footer.css">
+    <link rel="stylesheet" href="/Abstracoes/header.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carousel.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="header-container">
+            <img class="header-logo" src="../Assets/logo.png" />
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#empresas-parceiras">Empresas Parceiras</a></li>
+                    <li><a href="#sobre">Sobre nós</a></li>
+                    <li><a href="#ensinar-cadastro">Como participar?</a></li>
+                    <li><a href="#">Cadastre-se</a></li>
+                </ul>
+            </nav>
+            <button id="menuToggle" class="menu-btn">&#9776;</button>
+        </div>
+    </header>
+
+    <!-- Menu Lateral -->
+    <div id="menuSidebar" class="sidebar">
+        <button id="closeMenu" class="close-btn">&times;</button>
+        <ul class="menu-list">
+            <li><a href="#empresas-parceiras">Empresas Parceiras</a></li>
+            <li><a href="#sobre">Sobre nós</a></li>
+            <li><a href="#ensinar-cadastro">Como participar?</a></li>
+            <li><a href="#">Cadastrar</a></li>
+        </ul>
+        <div class="menu-footer">
+            <span class="perfil-icon">&#128100;</span>
+            <span class="perfil-text">Perfil</span>
+        </div>
+    </div>
+
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="logo">
+                <img src="https://i.imgur.com/C6X3vqp.png" alt="Logo" />
+                <div class="logo-text">EXCLUSIVE</div>
+            </div>
+            <div class="subtitle">REFERÊNCIA NACIONAL HÁ 4 ANOS</div>
+            <h1 class="title">
+                Conquiste com Cheiros:<br>Desperte Emoções com
+                <span>Marketing Olfativo Premium!</span>
+            </h1>
+            <p class="description">
+                Desperte emoções, crie memórias e diferencie sua marca de maneira única com o Marketing Olfativo da
+                Exclusive. Transforme seu espaço em uma experiência sensorial envolvente, onde fragrâncias exclusivas
+                contam a história da sua marca. Seja lembrado não apenas pelo que seus clientes veem, mas pelo que
+                sentem!
+            </p>
+            <button class="cta-button">QUERO TORNAR A MINHA MARCA INESQUECÍVEL</button>
+            <div class="video-icon"></div>
+        </div>
+    </section>
+    <section class="carousel-section">
+        <div class="carousel-background"></div>
+        <div class="carousel-content">
+            <div class="testimonial active">
+                <p>"Simplesmente apaixonada pelos produtos! A qualidade dos aromas é incomparável,
+                    e minha casa nunca esteve tão cheirosa. A dona é super atenciosa,
+                    sempre sabe exatamente o que indicar. Atendimento impecável!"</p>
+                <div class="author">
+                    <img src="/Assets/usuario.png" alt="Foto">
+                    <div>
+                        <strong>Nome</strong><br>
+                        Cargo
+                        Local
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <p>"Sempre compro lá quando passo por Barra Bonita.
+                    Produtos excelentes, duradouros e com fragrâncias únicas.
+                    A proprietária faz questão de conhecer cada cliente e oferecer o melhor atendimento possível.
+                    Virei cliente fiel!"</p>
+                <div class="author">
+                    <img src="/Assets/usuario.png" alt="Foto">
+                    <div>
+                        <strong>Nome</strong><br>
+                        Cargo Local
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <p>"A loja tem um astral maravilhoso!
+                    Tudo muito bem organizado e com aquele cheirinho que a gente sente de longe.
+                    Adoro passar lá pra ver as novidades e bater papo com a dona, que sempre atende com carinho e
+                    atenção."</p>
+                <div class="author">
+                    <img src="/Assets/usuario.png" alt="Foto">
+                    <div>
+                        <strong>Camila Duarte – Barra Bonita/SP</strong><br>
+                        Cargo Local
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botões -->
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+            <div class="dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <!-- ... -->
+            </div>
+        </div>
+    </section>
+
+
+    <a href="https://wa.me/SEUNUMEROAQUI" class="whatsapp" target="_blank" aria-label="Converse no WhatsApp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+    </a>
+
+    <script src="/Abstracoes/header.js"></script>
+    <script src="script.js"></script>
+    <script src="carousel.js"></script>
+</body>
+
+</html>
